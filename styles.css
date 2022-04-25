@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Outfit;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* h1, text box */
+.container {
+  width: 75%;
+  padding: 10px;
+  margin-top: 20px;
+}
+.box {
+  display: flex;
+}
+@media (max-width: 376px) {
+  .box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .container {
+    padding: 50px 10px;
+    margin-top: 0px;
+    width: 80%;
+  }
+}
+
+.text {
+  max-width: 400px;
+  width: 100%;
+  color: hsl(303, 10%, 53%);
+}
+h1 {
+  font-size: 2.5em;
+  max-width: 300px;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 376px) {
+  h1 {
+    line-height: 1em;
+  }
+  .text {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text p {
+    width: 300px;
+    margin-top: 30px;
+  }
+}
+
+/* custom box */
+.customers-box {
+  display: flex;
+  margin-top: 20px;
+  color: hsl(300, 24%, 96%);
+}
+@media (max-width: 376px) {
+  .customers-box {
+    flex-direction: column;
+  }
+}
+.custom {
+  padding: 30px;
+  margin: 40px 20px 0 0;
+  border-radius: 0.7em;
+  max-height: 200px;
+  height: 100%;
+  background-color: hsl(300, 43%, 22%);
+  font-size: 14px;
+}
+
+@media (max-width: 376px) {
+  .custom {
+    margin: 0 auto;
+  }
+  .irene,
+  .anne {
+    margin-top: 20px !important;
+  }
+}
+
+.irene {
+  margin-top: 60px;
+}
+.anne {
+  margin-top: 80px;
+}
+.infos {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.customer-img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.verified {
+  color: hsla(333, 80%, 67%, 0.415);
+}
+.name {
+  color: white;
+}
+/* Ratings section */
+.rating {
+  display: flex;
+  margin: 0 0 10px 0;
+  padding: 12px 20px;
+  border-radius: 0.7em;
+  max-width: 340px;
+  background-color: hsl(300, 24%, 96%);
+}
+.rating p {
+  font-weight: bold;
+  color: hsl(300, 43%, 22%);
+}
+.starbox {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.starbox img {
+  margin-right: 5px;
+}
+.guru {
+  margin-left: 40px;
+}
+.besttech {
+  margin-left: 80px;
+}
+.stars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 0 0 80px;
+}
+@media (max-width: 376px) {
+  .stars {
+    margin: 0 0 20px 0;
+  }
+  .besttech,
+  .guru {
+    margin: 0;
+  }
+  .rating {
+    padding: 15px 0;
+    margin: 10px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .starbox {
+    margin: 0 0 10px 0;
+  }
+}
